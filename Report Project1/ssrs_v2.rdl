@@ -1915,7 +1915,16 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>Ets selectionné(e)s : {?Titre}</Value>
+                  <Value>Ets selectionné(e)s : </Value>
+                  <Style />
+                </TextRun>
+                <TextRun>
+                  <Value>=Parameters!titre.Value</Value>
+                  <Style />
+                </TextRun>
+                <TextRun>
+                  <Value xml:space="preserve"> </Value>
+                  <ToolTip>=Parameters!titre.Value</ToolTip>
                   <Style />
                 </TextRun>
               </TextRuns>
@@ -2162,6 +2171,12 @@ FROM   dbo.SITE SITE</CommandText>
       </Fields>
     </DataSet>
   </DataSets>
+  <ReportParameters>
+    <ReportParameter Name="titre">
+      <DataType>String</DataType>
+      <Prompt>Saisir le Titre de l'état :</Prompt>
+    </ReportParameter>
+  </ReportParameters>
   <Variables>
     <Variable Name="ConsumeContainerWhitespace">
       <Value>true</Value>
