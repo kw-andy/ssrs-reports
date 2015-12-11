@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Body>
+    <ReportItems>
+      <Tablix Name="Tablix4">
+        <TablixBody>
+          <TablixColumns>
+            <TablixColumn>
+              <Width>6.02347cm</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>6.02347cm</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>6.02347cm</Width>
+            </TablixColumn>
+          </TablixColumns>
+          <TablixRows>
+            <TablixRow>
+              <Height>0.6cm</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox17">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>fgfdg</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox17</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="SigleEnseigne1">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!SigleEnseigne1.Value</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>SigleEnseigne1</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox21">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>gfdhgdf</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox21</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+          </TablixRows>
+        </TablixBody>
+        <TablixColumnHierarchy>
+          <TablixMembers>
+            <TablixMember />
+            <TablixMember />
+            <TablixMember />
+          </TablixMembers>
+        </TablixColumnHierarchy>
+        <TablixRowHierarchy>
+          <TablixMembers>
+            <TablixMember>
+              <Group Name="Details1" />
+            </TablixMember>
+          </TablixMembers>
+        </TablixRowHierarchy>
+        <DataSetName>sigle_enseigne</DataSetName>
+        <Top>3.46287cm</Top>
+        <Left>1.79599cm</Left>
+        <Height>0.6cm</Height>
+        <Width>18.07041cm</Width>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Tablix>
+    </ReportItems>
+    <Height>29.7cm</Height>
+    <Style />
+  </Body>
+  <Width>21cm</Width>
+  <Page>
+    <PageHeight>29.7cm</PageHeight>
+    <PageWidth>21cm</PageWidth>
+    <LeftMargin>0cm</LeftMargin>
+    <RightMargin>0cm</RightMargin>
+    <TopMargin>2cm</TopMargin>
+    <BottomMargin>2cm</BottomMargin>
+    <ColumnSpacing>0.13cm</ColumnSpacing>
+    <Style />
+  </Page>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource1">
+      <ConnectionProperties>
+        <DataProvider>ODBC</DataProvider>
+        <ConnectString>Dsn=SQLAKWOK</ConnectString>
+      </ConnectionProperties>
+      <rd:SecurityType>DataBase</rd:SecurityType>
+      <rd:DataSourceID>4b9df112-bc51-433a-a5c6-99040166271f</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="sigle_enseigne">
+      <Query>
+        <DataSourceName>DataSource1</DataSourceName>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>SigleEnseigne</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="SigleEnseigne1">
+          <DataField>SigleEnseigne1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="DataSet2">
+      <Query>
+        <DataSourceName>DataSource1</DataSourceName>
+        <CommandText>SELECT SITE.IU_SITE 
+FROM   dbo.SITE SITE</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="IU_SITE">
+          <DataField>IU_SITE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="DataSet1">
+      <Query>
+        <DataSourceName>DataSource1</DataSourceName>
+        <CommandText>SELECT TableV_EtablissementsListePixi.Siret, 
+TableV_EtablissementsListePixi.Raison_Sociale, 
+TableV_EtablissementsListePixi.Adresse1_Post, 
+TableV_EtablissementsListePixi.Adresse2_Post, 
+TableV_EtablissementsListePixi.Code_Postal_Post, 
+TableV_EtablissementsListePixi.Libel_Commune_Post, 
+TableV_EtablissementsListePixi.Dirigeants, 
+TableV_EtablissementsListePixi.Activite, 
+TableV_EtablissementsListePixi.Sigle, 
+TableV_EtablissementsListePixi.Enseigne, 
+TableV_EtablissementsListePixi.Code_Juridique, 
+TableV_EtablissementsListePixi.Adresse1_Eco, 
+TableV_EtablissementsListePixi.Adresse2_Eco, 
+TableV_EtablissementsListePixi.Bp_Post, 
+TableV_EtablissementsListePixi.Code_Postal_Eco, 
+TableV_EtablissementsListePixi.Libel_Commune_Eco, 
+TableV_EtablissementsListePixi.Naf_Eco, 
+TableV_EtablissementsListePixi.Date_Creation, 
+TableV_EtablissementsListePixi.Siren, 
+TableV_EtablissementsListePixi.Nic, 
+TableV_EtablissementsListePixi.Libel_Naf_Eco, 
+TableV_EtablissementsListePixi.Effectifs, 
+TableV_EtablissementsListePixi.Telephone_Formate, 
+TableV_EtablissementsListePixi.Fax_Formate, 
+TableV_EtablissementsListePixi.Code_Categ_Ets, 
+TableV_EtablissementsListePixi.Email, 
+TableV_EtablissementsListePixi.Internet, 
+TableV_EtablissementsListePixi.Capital, 
+TableV_EtablissementsListePixi.Libel_Origine_Ets, 
+TableV_EtablissementsListePixi.Devise, 
+TableV_EtablissementsListePixi.Non_Envoi, 
+TableV_EtablissementsListePixi.Retour_Courrier, 
+TableV_EtablissementsListePixi.Code_Juridique_Tri, 
+TableV_EtablissementsListePixi.ICS 
+FROM   dbo.TableV_EtablissementsListePixi TableV_EtablissementsListePixi 
+WHERE Not ((Left(TableV_EtablissementsListePixi.Nic, 1) = 'P')) And Not 
+((Left(TableV_EtablissementsListePixi.Siren, 1) = 'H' 
+OR Left(TableV_EtablissementsListePixi.Siren, 1) = 'P'))</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="Siret">
+          <DataField>Siret</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Raison_Sociale">
+          <DataField>Raison_Sociale</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Adresse1_Post">
+          <DataField>Adresse1_Post</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Adresse2_Post">
+          <DataField>Adresse2_Post</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Code_Postal_Post">
+          <DataField>Code_Postal_Post</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Libel_Commune_Post">
+          <DataField>Libel_Commune_Post</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Dirigeants">
+          <DataField>Dirigeants</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Activite">
+          <DataField>Activite</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Sigle">
+          <DataField>Sigle</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Enseigne">
+          <DataField>Enseigne</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Code_Juridique">
+          <DataField>Code_Juridique</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Adresse1_Eco">
+          <DataField>Adresse1_Eco</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Adresse2_Eco">
+          <DataField>Adresse2_Eco</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Bp_Post">
+          <DataField>Bp_Post</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Code_Postal_Eco">
+          <DataField>Code_Postal_Eco</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Libel_Commune_Eco">
+          <DataField>Libel_Commune_Eco</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Naf_Eco">
+          <DataField>Naf_Eco</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Date_Creation">
+          <DataField>Date_Creation</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Siren">
+          <DataField>Siren</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Nic">
+          <DataField>Nic</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Libel_Naf_Eco">
+          <DataField>Libel_Naf_Eco</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Effectifs">
+          <DataField>Effectifs</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Telephone_Formate">
+          <DataField>Telephone_Formate</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Fax_Formate">
+          <DataField>Fax_Formate</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Code_Categ_Ets">
+          <DataField>Code_Categ_Ets</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Email">
+          <DataField>Email</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Internet">
+          <DataField>Internet</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Capital">
+          <DataField>Capital</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Libel_Origine_Ets">
+          <DataField>Libel_Origine_Ets</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Devise">
+          <DataField>Devise</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Non_Envoi">
+          <DataField>Non_Envoi</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Retour_Courrier">
+          <DataField>Retour_Courrier</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Code_Juridique_Tri">
+          <DataField>Code_Juridique_Tri</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ICS">
+          <DataField>ICS</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>29c319ef-cd75-40bc-bdf4-760eb0ef1381</rd:ReportID>
+</Report>

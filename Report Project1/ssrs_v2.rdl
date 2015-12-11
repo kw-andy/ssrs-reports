@@ -590,7 +590,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>@SigleEnseigne</Value>
+                              <Value>=First(Fields!SigleEnseigne1.Value, "DataSet3")</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -2166,6 +2166,19 @@ FROM   dbo.SITE SITE</CommandText>
       <Fields>
         <Field Name="IU_SITE">
           <DataField>IU_SITE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="DataSet3">
+      <Query>
+        <DataSourceName>DataSource1</DataSourceName>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>SigleEnseigne</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="SigleEnseigne1">
+          <DataField>SigleEnseigne1</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>
