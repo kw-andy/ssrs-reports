@@ -1969,7 +1969,7 @@
     <DataSource Name="DataSource1">
       <ConnectionProperties>
         <DataProvider>ODBC</DataProvider>
-        <ConnectString>Dsn=SQLPOITIERS;uid=PICTAVReport;Pwd=Sa125A123;persist security info=False</ConnectString>
+        <ConnectString>Dsn=SQLAKWOK;uid=PICTAVReport;Pwd=Sa125A123;persist security info=False</ConnectString>
       </ConnectionProperties>
       <rd:SecurityType>DataBase</rd:SecurityType>
       <rd:DataSourceID>b5c29c61-54fb-4c4e-9d68-c652578425c4</rd:DataSourceID>
