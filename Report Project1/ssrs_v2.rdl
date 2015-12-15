@@ -250,6 +250,36 @@
         </Field>
       </Fields>
     </DataSet>
+    <DataSet Name="cpville">
+      <Query>
+        <DataSourceName>DataSource1</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@choix_de_l_adresse">
+            <Value>=Parameters!choix_de_l_adresse.Value</Value>
+            <rd:UserDefined>true</rd:UserDefined>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandText>DECLARE @choix_de_l_adresse VARCHAR(38)
+SELECT Siren,
+CASE
+        WHEN (Code_Postal_Eco IS NULL OR Code_Postal_Post IS NULL OR Libel_Commune_Eco IS NULL OR Libel_Commune_Post IS NULL) THEN ''
+        WHEN @choix_de_l_adresse = 'Adresse Postale' AND Code_Postal_Post IS NOT NULL AND Libel_Commune_Post IS NOT NULL THEN Code_Postal_Post + ' ' + Libel_Commune_Post
+                                                                        ELSE
+                                                                        Code_Postal_Eco + '  ' + Libel_Commune_Eco
+                                                                        END AS cpville
+FROM TableV_EtablissementsListePixi</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="Siren">
+          <DataField>Siren</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="cpville">
+          <DataField>cpville</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
   </DataSets>
   <ReportSections>
     <ReportSection>
@@ -1466,7 +1496,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>@CPVille</Value>
+                                  <Value>=Lookup(Fields!Siren.Value,Fields!Siren.Value,Fields!cpville.Value,"cpville")</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
