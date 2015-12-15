@@ -2126,13 +2126,13 @@ FROM TableV_EtablissementsListePixi</CommandText>
             </Style>
           </Subreport>
         </ReportItems>
-        <Height>29.7cm</Height>
+        <Height>27.795cm</Height>
         <Style />
       </Body>
       <Width>21cm</Width>
       <Page>
         <PageHeader>
-          <Height>2.4439cm</Height>
+          <Height>1.54932cm</Height>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
             <Textbox Name="Textbox111">
@@ -2161,7 +2161,7 @@ FROM TableV_EtablissementsListePixi</CommandText>
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox111</rd:DefaultName>
-              <Top>0.94932cm</Top>
+              <Top>0.3175cm</Top>
               <Left>1.0287cm</Left>
               <Height>0.6cm</Height>
               <Width>19.17805cm</Width>
@@ -2182,6 +2182,60 @@ FROM TableV_EtablissementsListePixi</CommandText>
             </Border>
           </Style>
         </PageHeader>
+        <PageFooter>
+          <Height>1.52584cm</Height>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <ReportItems>
+            <Textbox Name="Textbox1">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>@NomCCI - </Value>
+                      <Style />
+                    </TextRun>
+                    <TextRun>
+                      <Value>reproduction interdite                                                                                                                   </Value>
+                      <Style>
+                        <FontStyle>Italic</FontStyle>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value>=Globals!PageNumber</Value>
+                      <Style>
+                        <FontStyle>Italic</FontStyle>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox1</rd:DefaultName>
+              <Top>0.92584cm</Top>
+              <Left>1.0287cm</Left>
+              <Height>0.6cm</Height>
+              <Width>19.9713cm</Width>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+          </ReportItems>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </PageFooter>
         <PageHeight>29.7cm</PageHeight>
         <PageWidth>21cm</PageWidth>
         <LeftMargin>0cm</LeftMargin>
