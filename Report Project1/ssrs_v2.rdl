@@ -2132,8 +2132,7 @@ FROM TableV_EtablissementsListePixi</CommandText>
       <Width>21cm</Width>
       <Page>
         <PageHeader>
-          <Height>2.47036cm</Height>
-          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <Height>2.4439cm</Height>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
             <Textbox Name="Textbox111">
