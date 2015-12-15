@@ -157,7 +157,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=(Fields!Raison_Sociale.Value, "DataSet1")</Value>
+                              <Value>=Lookup(Fields!Raison_Sociale.Value, "DataSet1")</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -344,21 +344,21 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox2">
+                    <Textbox Name="SigleEnseigne11">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value />
+                              <Value>=Fields!SigleEnseigne1.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox2</rd:DefaultName>
+                      <rd:DefaultName>SigleEnseigne11</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -1116,7 +1116,7 @@
         <Top>3.46287cm</Top>
         <Left>1.61078cm</Left>
         <Height>6.6cm</Height>
-        <Width>18.25521cm</Width>
+        <Width>18.25522cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
