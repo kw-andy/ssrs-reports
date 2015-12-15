@@ -233,7 +233,7 @@
       <SharedDataSet>
         <SharedDataSetReference>adresse2</SharedDataSetReference>
         <QueryParameters>
-          <QueryParameter Name="@choix_de_l_adresse2">
+          <QueryParameter Name="@choix_de_l_adresse">
             <Value>=Parameters!choix_de_l_adresse.Value</Value>
             <rd:UserDefined>true</rd:UserDefined>
           </QueryParameter>
@@ -1336,7 +1336,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Lookup(Fields!Siren.Value,Fields!Siren.Value,Parameters!adresse2.Value,"adresse2")</Value>
+                                  <Value>=Lookup(Fields!Siren.Value,Fields!Siren.Value,Fields!adresse2.Value,"adresse2")</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
