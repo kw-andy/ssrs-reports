@@ -251,24 +251,15 @@
       </Fields>
     </DataSet>
     <DataSet Name="cpville">
-      <Query>
-        <DataSourceName>DataSource1</DataSourceName>
+      <SharedDataSet>
+        <SharedDataSetReference>cpville</SharedDataSetReference>
         <QueryParameters>
           <QueryParameter Name="@choix_de_l_adresse">
             <Value>=Parameters!choix_de_l_adresse.Value</Value>
             <rd:UserDefined>true</rd:UserDefined>
           </QueryParameter>
         </QueryParameters>
-        <CommandText>DECLARE @choix_de_l_adresse VARCHAR(38)
-SELECT Siren,
-CASE
-        WHEN (Code_Postal_Eco IS NULL OR Code_Postal_Post IS NULL OR Libel_Commune_Eco IS NULL OR Libel_Commune_Post IS NULL) THEN ''
-        WHEN @choix_de_l_adresse = 'Adresse Postale' AND Code_Postal_Post IS NOT NULL AND Libel_Commune_Post IS NOT NULL THEN Code_Postal_Post + ' ' + Libel_Commune_Post
-                                                                        ELSE
-                                                                        Code_Postal_Eco + '  ' + Libel_Commune_Eco
-                                                                        END AS cpville
-FROM TableV_EtablissementsListePixi</CommandText>
-      </Query>
+      </SharedDataSet>
       <Fields>
         <Field Name="Siren">
           <DataField>Siren</DataField>
@@ -1148,6 +1139,7 @@ FROM TableV_EtablissementsListePixi</CommandText>
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -2238,6 +2230,8 @@ FROM TableV_EtablissementsListePixi</CommandText>
         </PageFooter>
         <PageHeight>29.7cm</PageHeight>
         <PageWidth>21cm</PageWidth>
+        <InteractiveHeight>15cm</InteractiveHeight>
+        <InteractiveWidth>21cm</InteractiveWidth>
         <LeftMargin>0cm</LeftMargin>
         <RightMargin>0cm</RightMargin>
         <TopMargin>1cm</TopMargin>
